@@ -7,4 +7,4 @@ The primary use case for this would be if you want a player to be able to hack w
 
 ### Setup
 
-Replace MonsterCharacterEntity with this script on any Monster that you want to harvest resources from. Then create a Harvestable for it and apply that to the HarvestableMonsterCharacterEntity.
+Replace MonsterCharacterEntity with HarvestableMonsterCharacterEntity.cs on any Monster that you want to harvest resources from. Then create a Harvestable for it and apply that to the HarvestableMonsterCharacterEntity.
