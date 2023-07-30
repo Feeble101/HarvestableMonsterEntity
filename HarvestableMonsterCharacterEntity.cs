@@ -210,18 +210,6 @@ namespace MultiplayerARPG
                     if (droppingItems.Count > 0)
                         ItemsContainerEntity.DropItems(CurrentGameInstance.monsterCorpsePrefab, this, droppingItems, looters, CurrentGameInstance.monsterCorpseAppearDuration);
                     break;
-
-                case DeadDropItemMode.CorpseHarvest:
-                    if (droppingItems.Count > 0)
-                    //ItemsContainerEntity.DropItems(CurrentGameInstance.monsterCorpsePrefab, this, droppingItems, looters, CurrentGameInstance.monsterCorpseAppearDuration);
-
-                    // STG
-                    {
-                        ItemsContainerEntity dropped = ItemsContainerEntity.DropItems(CurrentGameInstance.monsterCorpsePrefab, this, droppingItems, looters, CurrentGameInstance.monsterCorpseAppearDuration);
-                        dropped.transform.parent = transform;
-                    }
-
-                    break;
             }
 
             if (lastPlayer != null)
